@@ -22,7 +22,7 @@ if (global.$dustReactLoaded) {
 
 function loadComponent(relativePath, componentPath, callback) {
 	var resolvedPath;
-	if (!componentPath.match(/\.jsx$/) && !!componentPath.match(/\.js$/)) {
+	if (!componentPath.match(/\.jsx$/) && !componentPath.match(/\.js$/)) {
 		componentPath += '.jsx';
 	}
 
